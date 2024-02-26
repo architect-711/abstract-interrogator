@@ -14,4 +14,9 @@
   <url>http://maven.apache.org</url>
 
   <!-- Environment settings -->
+  <scm>
+    <connection>git@github.com:architect-711/abstract-interrogator.git</connection>
+    <developerConnection>git@github.com:architect-711/abstract-interrogator.git</developerConnection>
+    <url>https://github.com/architect-711/abstract-interrogator.git</url>
+  </scm>
 </project>
