@@ -1,0 +1,3 @@
+# Lines start with # are comments and will be ignored
+# This file contains all words to be interrogated
+# They must be placed in a column without any extra characters
