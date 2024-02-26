@@ -7,7 +7,10 @@ public class AbstractInterrogator {
 
             dataParser.findFile();
             dataParser.parseData();
-            System.out.println(dataParser.getParsedData());
+
+            Interrogator interrogator = new Interrogator(dataParser.getParsedData());
+
+            interrogator.startInterrogation();
         } catch (Exception exception) {
             System.out.println(exception);
         }
