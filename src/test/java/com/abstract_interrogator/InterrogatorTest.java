@@ -11,6 +11,6 @@ class InterrogatorTest {
     void shouldThrowIllegalArgumentException() {
         Interrogator interrogator = new Interrogator(new HashSet<>());
 
-        assertThrows(IllegalAccessError.class, interrogator::startInterrogation);
+        assertThrows(IllegalArgumentException.class, interrogator::startInterrogation);
     }
 }
