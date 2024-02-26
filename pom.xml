@@ -46,6 +46,16 @@
   <version>1.0.0</version>
   <name>Archetype - com.abstract_interrogator.AbstractInterrogator</name>
   <url>http://maven.apache.org</url>
+  <developers>
+    <developer>
+      <id>architect-711</id>
+      <name>Dmitrii Paletskii</name>
+      <email>jfjjjnqhqiriykkn@gmail.com</email>
+      <roles>
+        <role>Owner</role>
+      </roles>
+    </developer>
+  </developers>
 
   <!-- Environment settings -->
   <scm>
