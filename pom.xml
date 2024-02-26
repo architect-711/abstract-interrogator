@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- The basics -->
-  <groupId>org.abstract.interrogator</groupId>
+  <groupId>org.abstract_interrogator</groupId>
   <artifactId>AbstractInterrogator</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <!-- Build settings -->
 
   <!-- More project information -->
-  <name>Archetype - AbstractInterrogator</name>
+  <name>Archetype - com.abstract_interrogator.AbstractInterrogator</name>
   <url>http://maven.apache.org</url>
 
   <!-- Environment settings -->
