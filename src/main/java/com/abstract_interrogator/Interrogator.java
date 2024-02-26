@@ -11,7 +11,11 @@ public class Interrogator {
         this.targetData = parsedData.stream().toList();
     }
 
-    public void startInterrogation() {
+    public void startInterrogation() throws IllegalArgumentException {
+        if (targetData.isEmpty()) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
