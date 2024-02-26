@@ -10,7 +10,7 @@ class DataParserTest {
     void shouldFindFile() {
         DataParser dataParser = new DataParser();
 
-        assertDoesNotThrow(() -> dataParser.findFile());
+        assertDoesNotThrow(dataParser::findFile);
     }
 
 }
