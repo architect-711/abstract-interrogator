@@ -14,7 +14,7 @@ public class AbstractInterrogator {
 
             interrogator.startInterrogation();
         } catch (Exception exception) {
-            System.out.println(exception);
+            printException(exception);
         }
     }
 
