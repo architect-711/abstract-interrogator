@@ -1,5 +1,7 @@
 package com.abstract_interrogator;
 
+import java.util.Arrays;
+
 public class AbstractInterrogator {
     public static void start() {
         try {
@@ -14,5 +16,14 @@ public class AbstractInterrogator {
         } catch (Exception exception) {
             System.out.println(exception);
         }
+    }
+
+    private static void printException(Exception exception) {
+        System.out.println(
+                "Exception: " + exception.getClass() +
+                "Message: " + exception.getMessage() +
+                "Because: " + exception.getCause() +
+                "StackTrace: " + Arrays.toString(exception.getStackTrace())
+        );
     }
 }
