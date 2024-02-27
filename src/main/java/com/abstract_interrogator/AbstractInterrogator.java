@@ -20,9 +20,9 @@ public class AbstractInterrogator {
 
     private static void printException(Exception exception) {
         System.out.println(
-                "Exception: " + exception.getClass() +
-                "Message: " + exception.getMessage() +
-                "Because: " + exception.getCause() +
+                "Exception: " + exception.getClass() + "\n" +
+                "Message: " + exception.getMessage() + "\n" +
+                "Because: " + exception.getCause() + "\n" +
                 "StackTrace: " + Arrays.toString(exception.getStackTrace())
         );
     }
