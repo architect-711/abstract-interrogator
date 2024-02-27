@@ -28,6 +28,6 @@ public class Interrogator {
     }
 
     private int getRandomNumber() {
-        return (int) (Math.random() * targetData.size() + 1);
+        return (int) (Math.random() * targetData.size());
     }
 }
