@@ -3,9 +3,9 @@ package com.abstract_interrogator;
 import java.util.Arrays;
 
 public class AbstractInterrogator {
-    public static void start() {
+    public static void start(String[] args) {
         try {
-            DataParser dataParser = new DataParser();
+            DataParser dataParser = new DataParser(args[0]);
 
             dataParser.findFile();
             dataParser.parseData();
@@ -23,7 +23,12 @@ public class AbstractInterrogator {
                 "Exception: " + exception.getClass() + "\n" +
                 "Message: " + exception.getMessage() + "\n" +
                 "Because: " + exception.getCause() + "\n" +
-                "StackTrace: " + Arrays.toString(exception.getStackTrace())
+                "StackTrace: "
         );
+        printStackTrace(exception.getStackTrace());
+    }
+
+    private static void printStackTrace(StackTraceElement[] stackTraceElements) {
+        Arrays.stream(stackTraceElements).forEach(element -> System.out.println("    " + element + "\n"));
     }
 }
