@@ -59,7 +59,7 @@
   </build>
 
   <!-- More project information -->
-  <version>1.0.0</version>
+  <version>2.0.0</version>
   <name>Archetype - com.abstract_interrogator.AbstractInterrogator</name>
   <url>http://maven.apache.org</url>
   <developers>
