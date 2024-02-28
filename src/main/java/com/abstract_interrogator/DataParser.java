@@ -7,11 +7,13 @@ import java.io.IOException;
 import java.util.HashSet;
 
 public class DataParser {
-    private final String PATH_TO_FILE = "src/main/resources/target.txt";
+    private final String PATH_TO_FILE;
     private BufferedReader bufferedReader;
     private HashSet<String> parsedData;
 
-    public DataParser() {}
+    public DataParser(final String PATH_TO_FILE) {
+        this.PATH_TO_FILE = PATH_TO_FILE;
+    }
 
     public void findFile() throws FileNotFoundException {
         bufferedReader = new BufferedReader(new FileReader(PATH_TO_FILE));
