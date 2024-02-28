@@ -3,15 +3,80 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- The basics -->
-  <groupId>org.abstract.interrogator</groupId>
+  <groupId>org.abstract_interrogator</groupId>
   <artifactId>AbstractInterrogator</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.8.1</version>
+    </dependency>
+  </dependencies>
+  <packaging>jar</packaging>
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
 
   <!-- Build settings -->
+  <build>
+    <plugins>
+      <plugin>
+        <!-- To run unit tests -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.21.0</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>1.2.0-M1</version>
+          </dependency>
+          <dependency>
+            <!-- To write Jupiter tests -->
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.2.0-M1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>com.abstract_interrogator.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
   <!-- More project information -->
-  <name>Archetype - AbstractInterrogator</name>
+  <version>2.0.0</version>
+  <name>Archetype - com.abstract_interrogator.AbstractInterrogator</name>
   <url>http://maven.apache.org</url>
+  <developers>
+    <developer>
+      <id>architect-711</id>
+      <name>Dmitrii Paletskii</name>
+      <email>jfjjjnqhqiriykkn@gmail.com</email>
+      <roles>
+        <role>Owner</role>
+      </roles>
+    </developer>
+  </developers>
 
   <!-- Environment settings -->
+  <scm>
+    <connection>git@github.com:architect-711/abstract-interrogator.git</connection>
+    <developerConnection>git@github.com:architect-711/abstract-interrogator.git</developerConnection>
+    <url>https://github.com/architect-711/abstract-interrogator.git</url>
+  </scm>
 </project>

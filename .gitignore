@@ -1,9 +1,11 @@
-target/The Abstract Interrogator is the program that interrogates user words defined in the file.
+target/**/
+!target/*.jar
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
+out/
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
