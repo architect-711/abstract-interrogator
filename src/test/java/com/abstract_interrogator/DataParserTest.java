@@ -8,7 +8,8 @@ class DataParserTest {
 
     @Test
     void shouldFindFile() {
-        DataParser dataParser = new DataParser();
+        // change path to yours to test
+        DataParser dataParser = new DataParser("/home/dmitrii/Desktop/target.txt");
 
         assertDoesNotThrow(dataParser::findFile);
     }
