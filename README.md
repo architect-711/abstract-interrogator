@@ -9,7 +9,7 @@ words from specified file.
 
 ## How does it work
 Program looks for the file you specify in parameters
-and shows in console each line data.
+and infinitely shows in console each line data.
 
 ## How to use
 1. Create file you want to work with
@@ -40,3 +40,4 @@ Apple
 Banana
 Pen
 ```
+To exit use Ctrl + C.
